@@ -158,7 +158,7 @@ noCard.onclick = () => {
 
         // 2. Assign the actual logic
         finishBtn.onclick = () => {
-            window.location.href = '../index.html' // Put your destination URL here
+            window.location.href = '/in-between/' // Put your destination URL here
         };
 
         // 3. Clear the container and add the button
