@@ -4,12 +4,6 @@
     <title>In-Between Card Sim</title>
     <link rel="stylesheet" href="./css/global.css" />
 
-    <script>
-        function startGame() {
-            const origin = window.location.origin;
-            window.location.replace(origin.concat('/in-between/html/game.html'));
-        }
-    </script>
 </head>
 
 <body id="start-body">
@@ -18,7 +12,7 @@
     </h1>
     <h2>Card Game Simulator</h2>
 
-    <button type="button" id="startButton" onclick="startGame()">Start Game</button>
+    <button type="button" id="startButton" onclick="window.location.href='html/game.html'">Start Game</button>
 </body>
 
 </html>
