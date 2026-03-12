@@ -1,0 +1,120 @@
+:root {
+    --medium-gap: 0.5em;
+}
+
+body {
+    position: relative;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(182, 158, 180);
+    user-select: none;
+}
+
+button {
+    border-radius: 16px;
+    padding: 20px 20px;
+    font-family: sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    transition: background-color 0.1s;
+}
+
+#start-body {
+    top: 15%;
+}
+
+#start-body h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 10rem;
+}
+
+#start-body h2 {
+    font-size: 4rem;
+    font-weight: 100;
+    margin-top: var(--medium-gap);
+}
+
+/* start page styles */
+red {
+    color: rgb(218, 49, 49);
+}
+
+#startButton {
+    margin-top: var(--medium-gap);
+    background-color: lightblue;
+
+}
+
+#startButton:hover {
+    background-color: skyblue;
+}
+
+#startButton:active {
+    background-color: cornflowerblue;
+}
+
+
+/* game page styles */
+
+#game-body {
+    top: 5%;
+}
+
+#game-body h1 {
+    font-size: 5rem;
+}
+
+#game-body h2 {
+    font-size: 3rem;
+    font-weight: normal;
+}
+
+#card-container {
+    display: grid;
+    position: relative;
+    grid-template-columns: auto auto auto;
+    border: 0.5rem black solid;
+    margin-left: 40rem;
+    margin-right: 40rem;
+}
+
+#card-container .card {
+    font-size: 10rem;
+}
+
+/* buttons */
+#button-container {
+    font-size: 4rem;
+}
+
+#yes-btn {
+    background-color: limegreen;
+}
+
+#yes-btn:hover {
+    background-color: rgb(54, 182, 54);
+}
+
+#no-btn {
+    background-color: crimson;
+    color: white;
+}
+
+#no-btn:hover {
+    background-color: rgb(201, 22, 57);
+}
+
+/* cheat sheet */
+#cheat-sheet {
+    position: absolute;
+    max-width: 15rem;
+    font-size: 1.5rem;
+    left: 44%;
+    top: 50rem;
+}
+
+#cheat-sheet * {
+    background-color: darkgray;
+    border: black solid;
+    padding: 0.1rem;
+}

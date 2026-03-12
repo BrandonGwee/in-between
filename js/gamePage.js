@@ -172,14 +172,14 @@ noCard.onclick = () => {
 
 {   //cheat sheet funcs
     discardDisplay.onmousedown = () => {
-        discardInner.innerHTML = discardPile.map(val => substituteCard(val)).join(', ');
+        discardInner.innerHTML = (discardPile.length > 0 ? (discardPile.map(val => substituteCard(val)).join(', ')) : "(No cards)");
     }
     discardDisplay.onmouseup = () => {
         discardInner.innerHTML = "";
     }
 
     cardsLeftDisplay.onmousedown = () => {
-        remainInner.innerHTML = shuffledDeck.map(val => substituteCard(val)).join(', ');
+        remainInner.innerHTML = (shuffledDeck.length > 0 ? (shuffledDeck.slice(2, shuffledDeck.length + 1).map(val => substituteCard(val)).join(', ')) : "(No cards)");
     }
     cardsLeftDisplay.onmouseup = () => {
         remainInner.innerHTML = "";
